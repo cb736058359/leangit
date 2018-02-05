@@ -59,7 +59,7 @@
                     renderTo: '.divRight',
                     uniqueId: 'myJerichoTab',
                     contentCss: { 'height': $('.divRight').height() - 50 },
-                    tabs: [{
+                    /*tabs: [{
                             title: 'JeirchoTab',
                             closeable: false,
                             iconImg: 'images/jerichotab.png',
@@ -71,7 +71,7 @@
                             title: 'ASPX',
                             closeable: false,
                             data: { dataType: 'iframe', dataLink: 'a.aspx' }
-                        }],
+                        }],*/
                         activeTabIndex: 1,
                         loadOnce: true
                     });
@@ -79,7 +79,7 @@
             }
         $().ready(function() {
             d1 = new Date().getTime();
-            jericho.showLoader();
+            //jericho.showLoader();
             var w = $(document).width();
             var h = $(document).height();
             $('.divLeft').css({ width: 190, height: h - 120, 'display': 'block' });
@@ -88,7 +88,7 @@
             $('#ieuser').html(($.browser.msie ? 'yes, your browser is Internet Explorer' : 'oh, you are not using Internet Explorer?'));
             jericho.buildTree();
             jericho.buildTabpanel();
-            jericho.removeLoader();
+            //jericho.removeLoader();
         })
         $(window).resize(function() {
             var w = $(document).width();
