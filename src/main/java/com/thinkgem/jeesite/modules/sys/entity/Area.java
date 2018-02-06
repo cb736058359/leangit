@@ -3,6 +3,8 @@
  */
 package com.thinkgem.jeesite.modules.sys.entity;
 
+import java.util.Calendar;
+
 import org.hibernate.validator.constraints.Length;
 
 import common.persistence.TreeEntity;
@@ -69,6 +71,7 @@ public class Area extends TreeEntity<Area> {
 
 	@Length(min=1, max=1)
 	public String getType() {
+		Calendar.getInstance();
 		return type;
 	}
 
